@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.calc.app.CalcActivity$PlaceholderFragment">
+
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:rowCount="6"
+            android:columnOrderPreserved="true"
+            android:id="@+id/gridLayout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtResult"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnSpan="5"/>
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn1"
+            android:id="@+id/btn1"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn2"
+                android:id="@+id/btn2"
+                android:layout_row="1"
+                android:layout_column="2"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn3"
+                android:id="@+id/btn3"
+                android:layout_row="1"
+                android:layout_column="3"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnDiv"
+                android:id="@+id/btnDiv"
+                android:layout_row="1"
+                android:layout_column="4"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn4"
+                android:id="@+id/btn4"
+                android:layout_row="2"
+                android:layout_column="0"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn5"
+                android:id="@+id/btn5"
+                android:layout_row="2"
+                android:layout_column="2"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn6"
+                android:id="@+id/btn6"
+                android:layout_row="2"
+                android:layout_column="3"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnMul"
+                android:id="@+id/btnMul"
+                android:layout_row="2"
+                android:layout_column="4"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn7"
+                android:id="@+id/btn7"
+                android:layout_row="3"
+                android:layout_column="0"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn8"
+                android:id="@+id/btn8"
+                android:layout_row="3"
+                android:layout_column="2"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn9"
+                android:id="@+id/btn9"
+                android:layout_row="3"
+                android:layout_column="3"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnSub"
+                android:id="@+id/btnSub"
+                android:layout_row="3"
+                android:layout_column="4"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnC"
+                android:id="@+id/btnC"
+                android:layout_row="4"
+                android:layout_column="0"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/btnEq"
+                android:id="@+id/btnEq"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_columnSpan="5"
+                style="@style/AppTheme.Button"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn0"
+                android:id="@+id/btn0"
+                android:layout_row="4"
+                android:layout_column="2"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BtnDot"
+                android:id="@+id/btnDot"
+                android:layout_row="4"
+                android:layout_column="3"/>
+
+        <Button
+                style="@style/AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAdd"
+                android:id="@+id/btnAdd"
+                android:layout_row="4"
+                android:layout_column="4"/>
+
+    </GridLayout>
+</RelativeLayout>

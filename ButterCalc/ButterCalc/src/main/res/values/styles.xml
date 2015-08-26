@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo"/>
+        <!-- Customize your theme here. -->
+    <style name="AppTheme.Large" parent="android:TextAppearance.Holo.Large"/>
+    <style name="AppTheme.Button" parent="android:Widget.Button">
+        <item name="android:width">@dimen/btnWidth</item>
+        <item name="android:height">@dimen/btnHeight</item>
+        <item name="android:textAppearance">@style/AppTheme.Large</item>
+    </style>
+    <style name="AppTheme.ButtonLand" parent="android:Widget.Button">
+        <item name="android:width">@dimen/btnWidth</item>
+        <item name="android:height">@dimen/btnHeightLand</item>
+        <item name="android:textAppearance">@style/AppTheme.Large</item>
+    </style>
+
+</resources>

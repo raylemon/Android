@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vco.masterdetailwithouttemplate">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".presenters.ItemsListActivity"
+            android:label="@string/title_activity_items_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presenters.ItemDetailActivity"
+            android:label="@string/title_activity_item_detail"
+            android:parentActivityName=".presenters.ItemsListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vco.masterdetailwithouttemplate.presenters.ItemsListActivity" />
+        </activity>
+    </application>
+
+</manifest>
